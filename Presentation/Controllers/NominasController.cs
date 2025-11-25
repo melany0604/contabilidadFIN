@@ -22,8 +22,6 @@ namespace ContabilidadBackend.Presentation.Controllers
             _rrhhService = rrhhService;
         }
 
-        // ... (Tus otros métodos POST y GET se mantienen igual) ...
-
         [HttpPost]
         public async Task<IActionResult> RegistrarNomina([FromBody] NominaDTO nomina)
         {
@@ -36,25 +34,36 @@ namespace ContabilidadBackend.Presentation.Controllers
             catch (Exception ex) { return BadRequest(new { error = ex.Message }); }
         }
 
+        // --- CORRECCIÓN 1: Implementación real del GET ---
         [HttpGet("{id}")]
         public async Task<IActionResult> ObtenerNomina(int id)
         {
-            // ... (Tu implementación actual) ...
-            return Ok(); // Simplificado para el ejemplo
+            // Asumiendo que tu servicio tiene un método ObtenerPorIdAsync
+            var nomina = await _nominaService.ObtenerPorIdAsync(id);
+
+            if (nomina == null)
+            {
+                return NotFound(new { mensaje = $"No se encontró la nómina con ID {id}" });
+            }
+
+            return Ok(nomina);
         }
 
-        // CORRECCIÓN PRINCIPAL AQUÍ
+        [HttpGet]
+        public async Task<IActionResult> ObtenerTodas()
+        {
+            var nominas = await _nominaService.ObtenerTodasAsync();
+            return Ok(nominas);
+        }
+
         [HttpPost("sincronizar-rrhh")]
         public async Task<IActionResult> SincronizarDeRRHH([FromQuery] int? mes, [FromQuery] int? anio)
         {
             try
             {
-                // 1. Definir fecha (si no envían parámetros, usar fecha actual)
                 int mesConsulta = mes ?? DateTime.Now.Month;
                 int anioConsulta = anio ?? DateTime.Now.Year;
 
-                // 2. Obtener datos del microservicio externo (RRHH)
-                // SOLUCIÓN DEL ERROR: Ahora pasamos los parámetros requeridos
                 var nominasExternas = await _rrhhService.ObtenerNominasAsync(mesConsulta, anioConsulta);
 
                 if (nominasExternas == null || !nominasExternas.Any())
@@ -62,24 +71,27 @@ namespace ContabilidadBackend.Presentation.Controllers
                     return Ok(new { message = "No se encontraron nóminas en RRHH para este periodo." });
                 }
 
-                // 3. Guardar en Base de Datos Local (Contabilidad)
                 int contadorImportados = 0;
                 foreach (var nominaExt in nominasExternas)
                 {
-                    // Mapeamos de NominaRRHH (Externo) a NominaDTO (Interno)
                     var nuevaNomina = new NominaDTO
                     {
-                        IdEmpleado = (int)nominaExt.IdEmpleado, // Asegúrate de que los tipos coincidan
+                        IdEmpleado = (int)nominaExt.IdEmpleado,
+
+                        // CORRECCIÓN AQUÍ: Como NominaRRHH no tiene nombre, usamos el ID
+                        NombreEmpleado = $"Empleado Importado {nominaExt.IdEmpleado}",
+
                         MontoNeto = nominaExt.Monto,
+                        Salario = nominaExt.Monto,
+                        Deducciones = 0,
+                        Bonificacion = 0,
                         Mes = nominaExt.Mes,
                         Anio = nominaExt.Anio,
                         Estado = "Sincronizado",
-                        // Ajusta estas propiedades según tu DTO real
                         Departamento = "General",
                         FechaPago = DateTime.UtcNow
                     };
 
-                    // Guardamos usando tu servicio local
                     await _nominaService.RegistrarNominaAsync(nuevaNomina);
                     contadorImportados++;
                 }

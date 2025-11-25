@@ -55,6 +55,11 @@ namespace ContabilidadBackend.Application.Services
         {
             return await Task.FromResult(_context.Nominas.ToList());
         }
+
+        public async Task<Nomina> ObtenerPorIdAsync(int id)
+        {
+            return await _context.Nominas.FindAsync(id);
+        }
     }
 }
 

@@ -16,15 +16,24 @@ namespace ContabilidadBackend.Application.Services
         {
             _context = context;
         }
+        public async Task<Ingreso> ObtenerPorIdAsync(long id)
+        {
+            return await _context.Ingresos.FindAsync(id);
+        }
 
         public async Task<Ingreso> CrearIngresoAsync(IngresoDTO dto)
         {
+            
             var ingreso = new Ingreso
             {
-                Concepto = dto.Concepto,
+                NroFactura = dto.NroFactura,        
                 Monto = dto.Monto,
-                // Mapea las demás propiedades necesarias del DTO a la Entidad
-                FechaRegistro = System.DateTime.UtcNow
+                Concepto = dto.Concepto,
+                MetodoPago = dto.MetodoPago,        
+                IdChoferOVendedor = dto.IdChoferOVendedor,
+
+                FechaRegistro = System.DateTime.UtcNow,
+                Estado = "Registrado"               // Valor por defecto recomendado
             };
 
             _context.Ingresos.Add(ingreso);
@@ -32,7 +41,6 @@ namespace ContabilidadBackend.Application.Services
             return ingreso;
         }
 
-        // RENOMBRADO: Implementación correcta de ObtenerTodosAsync
         public async Task<List<Ingreso>> ObtenerTodosAsync()
         {
             return await _context.Ingresos.ToListAsync();
@@ -44,5 +52,7 @@ namespace ContabilidadBackend.Application.Services
                                  .Where(i => i.Concepto.Contains(concepto))
                                  .ToListAsync();
         }
+
+
     }
 }

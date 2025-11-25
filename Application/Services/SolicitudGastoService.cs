@@ -5,6 +5,10 @@ namespace ContabilidadBackend.Application.Services
     using ContabilidadBackend.Core.Interfaces;
     using ContabilidadBackend.Infrastructure.Data;
     using Microsoft.EntityFrameworkCore;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
 
     public class SolicitudGastoService : ISolicitudGastoService
     {
@@ -15,13 +19,23 @@ namespace ContabilidadBackend.Application.Services
             _context = context;
         }
 
+        
+        public async Task<SolicitudGasto> ObtenerPorIdAsync(int id)
+        {
+            return await _context.SolicitudesGasto.FindAsync((long)id);
+        }
+
+        
         public async Task<SolicitudGasto> CrearSolicitudAsync(SolicitudGastoDTO solicitudDto)
         {
             var solicitud = new SolicitudGasto
             {
                 TipoSolicitud = solicitudDto.TipoSolicitud,
                 Departamento = solicitudDto.Departamento,
+
+                
                 MontoSolicitado = solicitudDto.MontoSolicitado,
+
                 Descripcion = solicitudDto.Descripcion,
                 Estado = "Pendiente",
                 FechaSolicitud = DateTime.UtcNow
@@ -32,9 +46,11 @@ namespace ContabilidadBackend.Application.Services
             return solicitud;
         }
 
+        // 3. Aprobar Solicitud
         public async Task<SolicitudGasto> AprobarSolicitudAsync(AprobacionSolicitudDTO aprobacionDto)
         {
-            var solicitud = _context.SolicitudesGasto.FirstOrDefault(s => s.Id == aprobacionDto.IdSolicitud);
+            var solicitud = await _context.SolicitudesGasto.FindAsync((long)aprobacionDto.IdSolicitud);
+
             if (solicitud == null)
                 throw new Exception("Solicitud no encontrada");
 
@@ -50,12 +66,14 @@ namespace ContabilidadBackend.Application.Services
 
         public async Task<SolicitudGasto> RechazarSolicitudAsync(AprobacionSolicitudDTO rechazoDto)
         {
-            var solicitud = _context.SolicitudesGasto.FirstOrDefault(s => s.Id == rechazoDto.IdSolicitud);
+            var solicitud = await _context.SolicitudesGasto.FindAsync((long)rechazoDto.IdSolicitud);
+
             if (solicitud == null)
                 throw new Exception("Solicitud no encontrada");
 
             solicitud.Estado = "Rechazada";
-            solicitud.FechaAprobacion = DateTime.UtcNow;
+            solicitud.AprobadoPor = rechazoDto.AprobadoPor; 
+            solicitud.FechaAprobacion = DateTime.UtcNow; 
             solicitud.Observaciones = rechazoDto.Observaciones;
 
             _context.SolicitudesGasto.Update(solicitud);

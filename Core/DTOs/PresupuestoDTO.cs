@@ -7,5 +7,10 @@ namespace ContabilidadBackend.Core.DTOs
         public int Mes { get; set; }
         public int Anio { get; set; }
     }
+    public class ActualizarSaldoDTO
+    {
+        
+        public decimal RestarSaldo { get; set; }
+    }
 }
 

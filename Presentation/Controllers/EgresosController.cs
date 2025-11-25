@@ -55,32 +55,17 @@
         [HttpGet]
         public async Task<IActionResult> ObtenerEgresos()
         {
-            try
-            {
-                var egresos = await _egresoService.ObtenerTodosAsync();
-                return Ok(egresos);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            var egresos = await _egresoService.ObtenerTodosAsync();
+            return Ok(egresos);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> ObtenerEgreso(int id)
         {
-            try
-            {
-                var egreso = await _egresoService.ObtenerPorIdAsync(id);
-                if (egreso == null)
-                    return NotFound();
-
-                return Ok(egreso);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            // Asumiendo que EgresoService también tiene ObtenerPorIdAsync(long)
+            var egreso = await _egresoService.ObtenerPorIdAsync(id);
+            if (egreso == null) return NotFound();
+            return Ok(egreso);
         }
 
         [HttpGet("solicitud/{id}")]
@@ -88,10 +73,12 @@
         {
             try
             {
-                var solicitudes = await _solicitudGastoService.ObtenerTodasAsync();
-                var solicitud = solicitudes.FirstOrDefault(s => s.Id == id);
+                // ANTES: Traías todas y filtrabas en memoria (Lento)
+                // AHORA: Buscas solo la que necesitas (Rápido)
+                var solicitud = await _solicitudGastoService.ObtenerPorIdAsync(id);
+
                 if (solicitud == null)
-                    return NotFound();
+                    return NotFound(new { mensaje = "Solicitud no encontrada" });
 
                 return Ok(solicitud);
             }

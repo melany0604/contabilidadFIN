@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ContabilidadBackend.Migrations
 {
     [DbContext(typeof(ContabilidadContext))]
-    [Migration("20251125072750_M1")]
+    [Migration("20251125181423_M1")]
     partial class M1
     {
         /// <inheritdoc />

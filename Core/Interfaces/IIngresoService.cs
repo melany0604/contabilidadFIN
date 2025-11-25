@@ -9,9 +9,11 @@ namespace ContabilidadBackend.Core.Interfaces
     {
         Task<Ingreso> CrearIngresoAsync(IngresoDTO dto);
 
-        // RENOMBRADO: De ObtenerIngresosAsync a ObtenerTodosAsync
+        
         Task<List<Ingreso>> ObtenerTodosAsync();
 
         Task<List<Ingreso>> ObtenerIngresoPorConceptoAsync(string concepto);
+        
+        Task<Ingreso> ObtenerPorIdAsync(long id);
     }
 }

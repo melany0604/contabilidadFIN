@@ -9,5 +9,6 @@ namespace ContabilidadBackend.Core.Interfaces
         Task<List<Nomina>> ObtenerNominasDelMesAsync(int mes, int año);
         Task<decimal> ObtenerTotalNominasDelMesAsync(int mes, int año);
         Task<List<Nomina>> ObtenerTodasAsync();
+        Task<Nomina> ObtenerPorIdAsync(int id);
     }
 }

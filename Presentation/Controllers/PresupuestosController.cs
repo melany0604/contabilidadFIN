@@ -1,7 +1,12 @@
 ﻿using ContabilidadBackend.Core.DTOs;
 using ContabilidadBackend.Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using ContabilidadBackend.Core.DTOs;
+using ContabilidadBackend.Core.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using System.Collections.Generic; 
+using System;
 
 namespace ContabilidadBackend.Presentation.Controllers
 {
@@ -39,19 +44,17 @@ namespace ContabilidadBackend.Presentation.Controllers
             return Ok(presupuestos);
         }
 
+        // --- MÉTODO ACTUALIZADO Y CORREGIDO ---
         [HttpPut("{id}/restar-saldo")]
-        public async Task<IActionResult> RestarSaldo(int id, [FromBody] Dictionary<string, decimal> request)
+        public async Task<IActionResult> RestarSaldo(int id, [FromBody] ActualizarSaldoDTO datos)
         {
             try
             {
-                if (request == null || !request.ContainsKey("restar_saldo"))
-                    return BadRequest(new { error = "Falta el parámetro 'restar_saldo'" });
+                if (datos == null || datos.RestarSaldo <= 0)
+                    return BadRequest(new { error = "El monto a restar debe ser mayor a cero" });
 
-                var monto = request["restar_saldo"];
-                if (monto <= 0)
-                    return BadRequest(new { error = "El monto debe ser mayor a cero" });
+                var presupuesto = await _service.RestarSaldoAsync(id, datos.RestarSaldo);
 
-                var presupuesto = await _service.RestarSaldoAsync(id, monto);
                 return Ok(new
                 {
                     mensaje = "Saldo reducido correctamente",
@@ -59,9 +62,9 @@ namespace ContabilidadBackend.Presentation.Controllers
                     {
                         id = presupuesto.Id,
                         departamento = presupuesto.Departamento,
-                        saldoAnterior = presupuesto.Saldo + monto,
+                        saldoAnterior = presupuesto.Saldo + datos.RestarSaldo,
                         saldoActual = presupuesto.Saldo,
-                        montoRestado = monto
+                        montoRestado = datos.RestarSaldo
                     }
                 });
             }

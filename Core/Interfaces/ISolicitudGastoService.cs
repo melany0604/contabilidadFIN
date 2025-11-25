@@ -11,6 +11,7 @@ namespace ContabilidadBackend.Core.Interfaces
         Task<List<SolicitudGasto>> ObtenerSolicitudesPendientesAsync();
         Task<List<SolicitudGasto>> ObtenerSolicitudesAprobadas();
         Task<List<SolicitudGasto>> ObtenerTodasAsync();
+        Task<SolicitudGasto> ObtenerPorIdAsync(int id);
     }
 }
 
