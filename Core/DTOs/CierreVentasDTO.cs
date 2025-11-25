@@ -2,7 +2,9 @@ namespace ContabilidadBackend.Core.DTOs
 {
     public class CierreVentasDTO
     {
-        public string Sucursal { get; set; }
+        public DateTime Fecha { get; set; }
+
+        public string Sucursal { get; set; } = string.Empty;
         public decimal VentasEnRuta { get; set; }
         public decimal VentasEnTienda { get; set; }
         public decimal Devoluciones { get; set; }

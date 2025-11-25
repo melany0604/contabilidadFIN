@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Migrations\\20251125181423_M1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20251125181423_M1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\presentation\\controllers\\cierreventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:presentation\\controllers\\cierreventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\application\\services\\cierreventasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:application\\services\\cierreventasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\core\\interfaces\\icierreventasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:core\\interfaces\\icierreventasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\core\\dtos\\cierreventasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:core\\dtos\\cierreventasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\application\\services\\solicitudgastoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\application\\services\\presupuestoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:application\\services\\presupuestoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\presentation\\controllers\\nominascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -105,22 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\consumos\\distribucionconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:consumos\\distribucionconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\presentation\\controllers\\cierreventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:presentation\\controllers\\cierreventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\application\\services\\cierreventasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:application\\services\\cierreventasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\core\\interfaces\\icierreventasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:core\\interfaces\\icierreventasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\core\\dtos\\cierreventasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:core\\dtos\\cierreventasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\core\\entities\\cierreventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -217,6 +213,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\migrations\\20251125181423_m1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:migrations\\20251125181423_m1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -226,7 +226,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 51,
           "Children": [
             {
               "$type": "Bookmark",
@@ -237,8 +237,16 @@
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 53,
               "Title": "20251125181423_M1.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Migrations\\20251125181423_M1.cs",
               "RelativeDocumentMoniker": "Migrations\\20251125181423_M1.cs",
@@ -246,12 +254,11 @@
               "RelativeToolTip": "Migrations\\20251125181423_M1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T18:14:25.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T18:14:25.321Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "MarketingService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Consumos\\MarketingService.cs",
               "RelativeDocumentMoniker": "Consumos\\MarketingService.cs",
@@ -259,12 +266,11 @@
               "RelativeToolTip": "Consumos\\MarketingService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T07:10:53.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T07:10:53.202Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "VentasService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Consumos\\VentasService.cs",
               "RelativeDocumentMoniker": "Consumos\\VentasService.cs",
@@ -272,12 +278,11 @@
               "RelativeToolTip": "Consumos\\VentasService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T07:09:24.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T07:09:24.256Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "CierreVentas.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\CierreVentas.cs",
               "RelativeDocumentMoniker": "Core\\Entities\\CierreVentas.cs",
@@ -289,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "ISolicitudGastoService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Interfaces\\ISolicitudGastoService.cs",
               "RelativeDocumentMoniker": "Core\\Interfaces\\ISolicitudGastoService.cs",
@@ -297,12 +302,11 @@
               "RelativeToolTip": "Core\\Interfaces\\ISolicitudGastoService.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T04:22:15.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T04:22:15.154Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "IPresupuestoService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Interfaces\\IPresupuestoService.cs",
               "RelativeDocumentMoniker": "Core\\Interfaces\\IPresupuestoService.cs",
@@ -310,12 +314,11 @@
               "RelativeToolTip": "Core\\Interfaces\\IPresupuestoService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T04:21:55.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T04:21:55.869Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 39,
               "Title": "IPedidoFabricaService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Interfaces\\IPedidoFabricaService.cs",
               "RelativeDocumentMoniker": "Core\\Interfaces\\IPedidoFabricaService.cs",
@@ -327,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "INominaService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Interfaces\\INominaService.cs",
               "RelativeDocumentMoniker": "Core\\Interfaces\\INominaService.cs",
@@ -335,12 +338,11 @@
               "RelativeToolTip": "Core\\Interfaces\\INominaService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T04:21:28.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T04:21:28.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "IIngresoService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Interfaces\\IIngresoService.cs",
               "RelativeDocumentMoniker": "Core\\Interfaces\\IIngresoService.cs",
@@ -348,12 +350,11 @@
               "RelativeToolTip": "Core\\Interfaces\\IIngresoService.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T04:21:15.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T04:21:15.401Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "IFacturacionMensualService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Interfaces\\IFacturacionMensualService.cs",
               "RelativeDocumentMoniker": "Core\\Interfaces\\IFacturacionMensualService.cs",
@@ -365,19 +366,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 2,
               "Title": "ICierreVentasService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Interfaces\\ICierreVentasService.cs",
               "RelativeDocumentMoniker": "Core\\Interfaces\\ICierreVentasService.cs",
               "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Interfaces\\ICierreVentasService.cs",
               "RelativeToolTip": "Core\\Interfaces\\ICierreVentasService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwBIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T04:20:06.828Z"
+              "WhenOpened": "2025-11-25T04:20:06.828Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 44,
               "Title": "SolicitudGasto.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\SolicitudGasto.cs",
               "RelativeDocumentMoniker": "Core\\Entities\\SolicitudGasto.cs",
@@ -389,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Presupuesto.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\Presupuesto.cs",
               "RelativeDocumentMoniker": "Core\\Entities\\Presupuesto.cs",
@@ -397,12 +399,11 @@
               "RelativeToolTip": "Core\\Entities\\Presupuesto.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T04:19:30.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T04:19:30.764Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 45,
               "Title": "PedidoFabrica.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\PedidoFabrica.cs",
               "RelativeDocumentMoniker": "Core\\Entities\\PedidoFabrica.cs",
@@ -414,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 46,
               "Title": "Nomina.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\Nomina.cs",
               "RelativeDocumentMoniker": "Core\\Entities\\Nomina.cs",
@@ -426,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Ingreso.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\Ingreso.cs",
               "RelativeDocumentMoniker": "Core\\Entities\\Ingreso.cs",
@@ -434,12 +435,11 @@
               "RelativeToolTip": "Core\\Entities\\Ingreso.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T04:18:44.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T04:18:44.877Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 42,
               "Title": "SolicitudGastoDTO.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\DTOs\\SolicitudGastoDTO.cs",
               "RelativeDocumentMoniker": "Core\\DTOs\\SolicitudGastoDTO.cs",
@@ -451,7 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "PresupuestoDTO.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\DTOs\\PresupuestoDTO.cs",
               "RelativeDocumentMoniker": "Core\\DTOs\\PresupuestoDTO.cs",
@@ -459,12 +459,11 @@
               "RelativeToolTip": "Core\\DTOs\\PresupuestoDTO.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAuwAsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T04:16:47.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T04:16:47.951Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 43,
               "Title": "PedidoFabricaDTO.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\DTOs\\PedidoFabricaDTO.cs",
               "RelativeDocumentMoniker": "Core\\DTOs\\PedidoFabricaDTO.cs",
@@ -476,7 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "NominaDTO.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\DTOs\\NominaDTO.cs",
               "RelativeDocumentMoniker": "Core\\DTOs\\NominaDTO.cs",
@@ -488,7 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "IngresoDTO.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\DTOs\\IngresoDTO.cs",
               "RelativeDocumentMoniker": "Core\\DTOs\\IngresoDTO.cs",
@@ -496,12 +495,11 @@
               "RelativeToolTip": "Core\\DTOs\\IngresoDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T04:16:02.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T04:16:02.801Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "CuentaPorCobrarDTO.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\DTOs\\CuentaPorCobrarDTO.cs",
               "RelativeDocumentMoniker": "Core\\DTOs\\CuentaPorCobrarDTO.cs",
@@ -513,19 +511,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 3,
               "Title": "CierreVentasDTO.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\DTOs\\CierreVentasDTO.cs",
               "RelativeDocumentMoniker": "Core\\DTOs\\CierreVentasDTO.cs",
               "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\DTOs\\CierreVentasDTO.cs",
               "RelativeToolTip": "Core\\DTOs\\CierreVentasDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T04:14:54.302Z"
+              "WhenOpened": "2025-11-25T04:14:54.302Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "AprobacionSolicitudDTO.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\DTOs\\AprobacionSolicitudDTO.cs",
               "RelativeDocumentMoniker": "Core\\DTOs\\AprobacionSolicitudDTO.cs",
@@ -533,12 +532,11 @@
               "RelativeToolTip": "Core\\DTOs\\AprobacionSolicitudDTO.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T04:14:36.386Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T04:14:36.386Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "PresupuestoService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Application\\Services\\PresupuestoService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\PresupuestoService.cs",
@@ -546,12 +544,11 @@
               "RelativeToolTip": "Application\\Services\\PresupuestoService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T04:08:27.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T04:08:27.056Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "IngresoService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Application\\Services\\IngresoService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\IngresoService.cs",
@@ -559,12 +556,11 @@
               "RelativeToolTip": "Application\\Services\\IngresoService.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T04:06:50.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T04:06:50.61Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 35,
               "Title": "EgresoService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Application\\Services\\EgresoService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\EgresoService.cs",
@@ -576,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "SolicitudGastoService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Application\\Services\\SolicitudGastoService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\SolicitudGastoService.cs",
@@ -584,12 +580,11 @@
               "RelativeToolTip": "Application\\Services\\SolicitudGastoService.cs",
               "ViewState": "AgIAAF4AAAAAAAAAAAAAAGMAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T03:09:10.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T03:09:10.616Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "PedidoFabricaService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Application\\Services\\PedidoFabricaService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\PedidoFabricaService.cs",
@@ -601,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "NominaService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Application\\Services\\NominaService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\NominaService.cs",
@@ -609,12 +604,11 @@
               "RelativeToolTip": "Application\\Services\\NominaService.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAAAD0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T01:53:09.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T01:53:09.736Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "FacturacionMensualService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Application\\Services\\FacturacionMensualService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\FacturacionMensualService.cs",
@@ -626,19 +620,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 1,
               "Title": "CierreVentasService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Application\\Services\\CierreVentasService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\CierreVentasService.cs",
               "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Application\\Services\\CierreVentasService.cs",
               "RelativeToolTip": "Application\\Services\\CierreVentasService.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAcwD0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T01:52:13.969Z"
+              "WhenOpened": "2025-11-25T01:52:13.969Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "SucursalService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Consumos\\SucursalService.cs",
               "RelativeDocumentMoniker": "Consumos\\SucursalService.cs",
@@ -646,12 +641,11 @@
               "RelativeToolTip": "Consumos\\SucursalService.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAAAAAF4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T01:23:03.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T01:23:03.96Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "RRHHService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Consumos\\RRHHService.cs",
               "RelativeDocumentMoniker": "Consumos\\RRHHService.cs",
@@ -659,12 +653,11 @@
               "RelativeToolTip": "Consumos\\RRHHService.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAAAFUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T01:22:58.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T01:22:58.546Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "DistribucionConsumerService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Consumos\\DistribucionConsumerService.cs",
               "RelativeDocumentMoniker": "Consumos\\DistribucionConsumerService.cs",
@@ -672,25 +665,24 @@
               "RelativeToolTip": "Consumos\\DistribucionConsumerService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T01:22:41.161Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T01:22:41.161Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAAwGUAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAGUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-25T01:20:35.254Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 52,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -702,7 +694,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Infrastructure\\Repositories\\GenericRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\GenericRepository.cs",
@@ -710,12 +702,11 @@
               "RelativeToolTip": "Infrastructure\\Repositories\\GenericRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T01:13:02.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T01:13:02.274Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 36,
               "Title": "IEgresoService.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Interfaces\\IEgresoService.cs",
               "RelativeDocumentMoniker": "Core\\Interfaces\\IEgresoService.cs",
@@ -727,7 +718,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 38,
               "Title": "EgresoDTO.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\DTOs\\EgresoDTO.cs",
               "RelativeDocumentMoniker": "Core\\DTOs\\EgresoDTO.cs",
@@ -739,7 +730,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "ContabilidadContext.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Infrastructure\\Data\\ContabilidadContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Data\\ContabilidadContext.cs",
@@ -747,12 +738,11 @@
               "RelativeToolTip": "Infrastructure\\Data\\ContabilidadContext.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T01:05:25.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T01:05:25.091Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "PresupuestosController.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\PresupuestosController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\PresupuestosController.cs",
@@ -760,12 +750,11 @@
               "RelativeToolTip": "Presentation\\Controllers\\PresupuestosController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T01:01:39.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T01:01:39.398Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 50,
               "Title": "PedidosFabricaController.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\PedidosFabricaController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\PedidosFabricaController.cs",
@@ -777,7 +766,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "NominasController.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\NominasController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\NominasController.cs",
@@ -785,12 +774,11 @@
               "RelativeToolTip": "Presentation\\Controllers\\NominasController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACkAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T00:58:28.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T00:58:28.268Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "IngresosController.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\IngresosController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\IngresosController.cs",
@@ -798,12 +786,11 @@
               "RelativeToolTip": "Presentation\\Controllers\\IngresosController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T00:57:30.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T00:57:30.453Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 51,
               "Title": "FacturacionMensualController.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\FacturacionMensualController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\FacturacionMensualController.cs",
@@ -815,7 +802,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "EgresosController.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\EgresosController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\EgresosController.cs",
@@ -823,25 +810,24 @@
               "RelativeToolTip": "Presentation\\Controllers\\EgresosController.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAAAUwFgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T00:53:38.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T00:53:38.913Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 0,
               "Title": "CierreVentasController.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\CierreVentasController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\CierreVentasController.cs",
               "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\CierreVentasController.cs",
               "RelativeToolTip": "Presentation\\Controllers\\CierreVentasController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAIwAwAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-25T00:50:35.408Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 47,
               "Title": "FacturacionMensual.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\FacturacionMensual.cs",
               "RelativeDocumentMoniker": "Core\\Entities\\FacturacionMensual.cs",
@@ -853,7 +839,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "Egreso.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\Egreso.cs",
               "RelativeDocumentMoniker": "Core\\Entities\\Egreso.cs",
@@ -865,7 +851,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 48,
               "Title": "CuentaPorPagar.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\CuentaPorPagar.cs",
               "RelativeDocumentMoniker": "Core\\Entities\\CuentaPorPagar.cs",
@@ -877,7 +863,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 49,
               "Title": "CuentaPorCobrar.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\CuentaPorCobrar.cs",
               "RelativeDocumentMoniker": "Core\\Entities\\CuentaPorCobrar.cs",
@@ -889,7 +875,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 41,
               "Title": "CierreVentasDia.cs",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\CierreVentasDia.cs",
               "RelativeDocumentMoniker": "Core\\Entities\\CierreVentasDia.cs",
@@ -901,7 +887,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "ContabilidadBackend.csproj",
               "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\ContabilidadBackend.csproj",
               "RelativeDocumentMoniker": "ContabilidadBackend.csproj",
@@ -910,14 +896,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-11-25T00:45:03.594Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             }
           ]
         },

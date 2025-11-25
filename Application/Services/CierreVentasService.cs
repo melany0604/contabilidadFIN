@@ -1,11 +1,15 @@
+using ContabilidadBackend.Core.DTOs;
+using ContabilidadBackend.Core.Entities;
+using ContabilidadBackend.Core.Interfaces;
+using ContabilidadBackend.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
 namespace ContabilidadBackend.Application.Services
 {
-    using ContabilidadBackend.Core.DTOs;
-    using ContabilidadBackend.Core.Entities;
-    using ContabilidadBackend.Core.Interfaces;
-    using ContabilidadBackend.Infrastructure.Data;
-    using Microsoft.EntityFrameworkCore;
-
     public class CierreVentasService : ICierreVentasService
     {
         private readonly ContabilidadContext _context;
@@ -15,22 +19,19 @@ namespace ContabilidadBackend.Application.Services
             _context = context;
         }
 
-        public async Task<CierreVentas> CerrarVentasDelDiaAsync(CierreVentasDTO cierreDto)
+        public async Task<CierreVentas> RegistrarCierreAsync(CierreVentasDTO dto)
         {
-            var ventasNetas = cierreDto.VentasEnRuta + cierreDto.VentasEnTienda - cierreDto.Devoluciones;
-
-            // Instanciamos CierreVentas
             var cierre = new CierreVentas
             {
-                Fecha = DateTime.UtcNow,
-                Sucursal = cierreDto.Sucursal,
-                VentasEnRuta = cierreDto.VentasEnRuta,
-                VentasEnTienda = cierreDto.VentasEnTienda,
-                VentasTotal = cierreDto.VentasEnRuta + cierreDto.VentasEnTienda,
-                Devoluciones = cierreDto.Devoluciones,
-                VentasNetas = ventasNetas,
-                Estado = "Cerrado",
-                HoraCierre = DateTime.UtcNow
+                Fecha = dto.Fecha, // Asegúrate de que tu DTO tenga esta propiedad
+                Sucursal = dto.Sucursal,
+                VentasEnRuta = dto.VentasEnRuta,
+                VentasEnTienda = dto.VentasEnTienda,
+                VentasTotal = dto.VentasEnRuta + dto.VentasEnTienda,
+                Devoluciones = dto.Devoluciones,
+                VentasNetas = (dto.VentasEnRuta + dto.VentasEnTienda) - dto.Devoluciones,
+                HoraCierre = DateTime.UtcNow,
+                Estado = "Cerrado"
             };
 
             _context.CierresVentas.Add(cierre);
@@ -38,18 +39,24 @@ namespace ContabilidadBackend.Application.Services
             return cierre;
         }
 
-        public async Task<CierreVentas> ObtenerCierrePorFechaAsync(DateTime fecha)
+        public async Task<List<CierreVentas>> ObtenerPorFechaAsync(DateTime fecha)
         {
-            // Usamos FirstOrDefaultAsync
+            // Usamos .Date para ignorar la hora y evitar errores 404
             return await _context.CierresVentas
-                .FirstOrDefaultAsync(c => c.Fecha.Date == fecha.Date);
+                .Where(x => x.Fecha.Date == fecha.Date)
+                .ToListAsync();
         }
 
-        public async Task<List<CierreVentas>> ObtenerCierresMesAsync(int mes, int año)
+        public async Task<List<CierreVentas>> ObtenerPorMesAnioAsync(int mes, int anio)
         {
             return await _context.CierresVentas
-                .Where(c => c.Fecha.Month == mes && c.Fecha.Year == año)
+                .Where(x => x.Fecha.Month == mes && x.Fecha.Year == anio)
                 .ToListAsync();
+        }
+
+        public async Task<List<CierreVentas>> ObtenerTodosAsync()
+        {
+            return await _context.CierresVentas.ToListAsync();
         }
     }
 }

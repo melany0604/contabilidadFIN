@@ -1,13 +1,19 @@
+using ContabilidadBackend.Core.DTOs;
+using ContabilidadBackend.Core.Entities;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
 namespace ContabilidadBackend.Core.Interfaces
 {
-    using ContabilidadBackend.Core.DTOs;
-    using ContabilidadBackend.Core.Entities;
-
     public interface ICierreVentasService
     {
-        // Cambiado CierreVentasDia -> CierreVentas
-        Task<CierreVentas> CerrarVentasDelDiaAsync(CierreVentasDTO cierre);
-        Task<CierreVentas> ObtenerCierrePorFechaAsync(DateTime fecha);
-        Task<List<CierreVentas>> ObtenerCierresMesAsync(int mes, int año);
+        Task<CierreVentas> RegistrarCierreAsync(CierreVentasDTO dto);
+
+        Task<List<CierreVentas>> ObtenerPorFechaAsync(DateTime fecha);
+
+        Task<List<CierreVentas>> ObtenerPorMesAnioAsync(int mes, int anio);
+
+        Task<List<CierreVentas>> ObtenerTodosAsync();
     }
 }
