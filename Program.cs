@@ -18,6 +18,7 @@ builder.Services.AddDbContext<ContabilidadContext>(options =>
     options.UseNpgsql(databaseUrl)
 );
 
+
 builder.Services.AddScoped<GenericRepository<Ingreso>>();
 builder.Services.AddScoped<GenericRepository<Egreso>>();
 builder.Services.AddScoped<GenericRepository<Presupuesto>>();
@@ -31,12 +32,14 @@ builder.Services.AddScoped<GenericRepository<FacturacionMensual>>();
 
 builder.Services.AddScoped<IIngresoService, IngresoService>();
 builder.Services.AddScoped<IPresupuestoService, PresupuestoService>();
+
 builder.Services.AddScoped<INominaService, NominaService>();
 builder.Services.AddScoped<IEgresoService, EgresoService>();
 builder.Services.AddScoped<ISolicitudGastoService, SolicitudGastoService>();
 builder.Services.AddScoped<IPedidoFabricaService, PedidoFabricaService>();
 builder.Services.AddScoped<ICierreVentasService, CierreVentasService>();
 builder.Services.AddScoped<IFacturacionMensualService, FacturacionMensualService>();
+
 
 builder.Services.AddHttpClient<SucursalService>();
 builder.Services.AddHttpClient<RRHHService>();
@@ -65,17 +68,36 @@ var app = builder.Build();
 
 app.UseCors("AllowAll");
 
+
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<ContabilidadContext>();
-    db.Database.Migrate();
+    try
+    {
+        Console.WriteLine("--> BORRANDO BD ANTIGUA (Para corregir error de tablas faltantes)...");
+        // ESTA LÍNEA BORRA LA BD CORRUPTA Y PERMITE CREARLA DE NUEVO
+        db.Database.EnsureDeleted();
+
+        Console.WriteLine("--> Aplicando migraciones...");
+        db.Database.Migrate();
+        Console.WriteLine("--> Migraciones OK. Tablas creadas correctamente.");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"--> Error Migraciones: {ex.Message}");
+    }
 }
 
 if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
+
+
+if (app.Environment.IsDevelopment())
+
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
