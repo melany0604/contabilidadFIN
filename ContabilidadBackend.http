@@ -1,0 +1,6 @@
+@ContabilidadBackend_HostAddress = http://localhost:5094
+
+GET {{ContabilidadBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,477 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\migrations\\20251125012627_m1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:migrations\\20251125012627_m1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\consumos\\rrhhconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:consumos\\rrhhconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\consumos\\distribucionconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:consumos\\distribucionconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\consumos\\sucursalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:consumos\\sucursalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\consumos\\rrhhservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:consumos\\rrhhservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\presentation\\controllers\\ingresoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:presentation\\controllers\\ingresoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\presentation\\controllers\\presupuestoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:presentation\\controllers\\presupuestoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\presentation\\controllers\\egresoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:presentation\\controllers\\egresoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\core\\interfaces\\iegresoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:core\\interfaces\\iegresoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\core\\dtos\\egresodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:core\\dtos\\egresodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\presentation\\controllers\\pedidosfabricacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:presentation\\controllers\\pedidosfabricacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\presentation\\controllers\\nominascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:presentation\\controllers\\nominascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\presentation\\controllers\\cierreventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:presentation\\controllers\\cierreventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\presentation\\controllers\\facturacionmensualcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:presentation\\controllers\\facturacionmensualcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\infrastructure\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:infrastructure\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\core\\services\\ingresoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:core\\services\\ingresoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\core\\entities\\egreso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:core\\entities\\egreso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\infrastructure\\data\\contabilidadcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:infrastructure\\data\\contabilidadcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\contabilidadbackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:contabilidadbackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\core\\entities\\facturacionmensual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:core\\entities\\facturacionmensual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\core\\entities\\cuentaporpagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:core\\entities\\cuentaporpagar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\core\\entities\\cuentaporcobrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:core\\entities\\cuentaporcobrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|d:\\programacionweb2\\proyectopw2\\contabilidadbackend\\core\\entities\\cierreventasdia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBD5A10-8323-48CD-A08A-B86036FC4F04}|ContabilidadBackend.csproj|solutionrelative:core\\entities\\cierreventasdia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20251125012627_M1.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Migrations\\20251125012627_M1.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251125012627_M1.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Migrations\\20251125012627_M1.cs",
+              "RelativeToolTip": "Migrations\\20251125012627_M1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T01:26:29.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SucursalService.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Consumos\\SucursalService.cs",
+              "RelativeDocumentMoniker": "Consumos\\SucursalService.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Consumos\\SucursalService.cs",
+              "RelativeToolTip": "Consumos\\SucursalService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T01:23:03.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RRHHService.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Consumos\\RRHHService.cs",
+              "RelativeDocumentMoniker": "Consumos\\RRHHService.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Consumos\\RRHHService.cs",
+              "RelativeToolTip": "Consumos\\RRHHService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T01:22:58.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RRHHConsumerService.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Consumos\\RRHHConsumerService.cs",
+              "RelativeDocumentMoniker": "Consumos\\RRHHConsumerService.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Consumos\\RRHHConsumerService.cs",
+              "RelativeToolTip": "Consumos\\RRHHConsumerService.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAgwE4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T01:22:50.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DistribucionConsumerService.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Consumos\\DistribucionConsumerService.cs",
+              "RelativeDocumentMoniker": "Consumos\\DistribucionConsumerService.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Consumos\\DistribucionConsumerService.cs",
+              "RelativeToolTip": "Consumos\\DistribucionConsumerService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAgwE8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T01:22:41.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAAG8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T01:20:35.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-25T01:15:14.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Infrastructure\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\GenericRepository.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Infrastructure\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T01:13:02.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IngresoService.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Services\\IngresoService.cs",
+              "RelativeDocumentMoniker": "Core\\Services\\IngresoService.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Services\\IngresoService.cs",
+              "RelativeToolTip": "Core\\Services\\IngresoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T01:12:52.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IEgresoService.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Interfaces\\IEgresoService.cs",
+              "RelativeDocumentMoniker": "Core\\Interfaces\\IEgresoService.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Interfaces\\IEgresoService.cs",
+              "RelativeToolTip": "Core\\Interfaces\\IEgresoService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwBMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T01:12:36.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EgresoDTO.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\DTOs\\EgresoDTO.cs",
+              "RelativeDocumentMoniker": "Core\\DTOs\\EgresoDTO.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\DTOs\\EgresoDTO.cs",
+              "RelativeToolTip": "Core\\DTOs\\EgresoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T01:10:43.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ContabilidadContext.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Infrastructure\\Data\\ContabilidadContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\ContabilidadContext.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Infrastructure\\Data\\ContabilidadContext.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\ContabilidadContext.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T01:05:25.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PresupuestosController.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\PresupuestosController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\PresupuestosController.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\PresupuestosController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\PresupuestosController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T01:01:39.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PedidosFabricaController.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\PedidosFabricaController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\PedidosFabricaController.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\PedidosFabricaController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\PedidosFabricaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:59:46.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NominasController.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\NominasController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\NominasController.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\NominasController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\NominasController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:58:28.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IngresosController.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\IngresosController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\IngresosController.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\IngresosController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\IngresosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:57:30.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FacturacionMensualController.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\FacturacionMensualController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\FacturacionMensualController.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\FacturacionMensualController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\FacturacionMensualController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:55:21.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EgresosController.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\EgresosController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\EgresosController.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\EgresosController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\EgresosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:53:38.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CierreVentasController.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\CierreVentasController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\CierreVentasController.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Presentation\\Controllers\\CierreVentasController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\CierreVentasController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:50:35.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FacturacionMensual.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\FacturacionMensual.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\FacturacionMensual.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\FacturacionMensual.cs",
+              "RelativeToolTip": "Core\\Entities\\FacturacionMensual.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:46:45.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Egreso.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\Egreso.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\Egreso.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\Egreso.cs",
+              "RelativeToolTip": "Core\\Entities\\Egreso.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:46:44.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CuentaPorPagar.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\CuentaPorPagar.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\CuentaPorPagar.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\CuentaPorPagar.cs",
+              "RelativeToolTip": "Core\\Entities\\CuentaPorPagar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:46:43.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CuentaPorCobrar.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\CuentaPorCobrar.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\CuentaPorCobrar.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\CuentaPorCobrar.cs",
+              "RelativeToolTip": "Core\\Entities\\CuentaPorCobrar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:46:39.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CierreVentasDia.cs",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\CierreVentasDia.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\CierreVentasDia.cs",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\Core\\Entities\\CierreVentasDia.cs",
+              "RelativeToolTip": "Core\\Entities\\CierreVentasDia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:46:36.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ContabilidadBackend",
+              "DocumentMoniker": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\ContabilidadBackend.csproj",
+              "RelativeDocumentMoniker": "ContabilidadBackend.csproj",
+              "ToolTip": "D:\\programacionweb2\\proyectopw2\\ContabilidadBackend\\ContabilidadBackend.csproj",
+              "RelativeToolTip": "ContabilidadBackend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-25T00:45:03.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 27,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 27,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
