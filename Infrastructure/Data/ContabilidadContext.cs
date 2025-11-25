@@ -12,6 +12,11 @@ namespace ContabilidadBackend.Infrastructure.Data
         public DbSet<CuentaPorCobrar> CuentasPorCobrar { get; set; }
         public DbSet<CuentaPorPagar> CuentasPorPagar { get; set; }
         public DbSet<Presupuesto> Presupuestos { get; set; }
+        public DbSet<Nomina> Nominas { get; set; }
+        public DbSet<SolicitudGasto> SolicitudesGasto { get; set; }
+        public DbSet<PedidoFabrica> PedidosFabrica { get; set; }
+        public DbSet<CierreVentas> CierresVentas { get; set; }
+        public DbSet<FacturacionMensual> FacturacionesMensuales { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -49,6 +54,37 @@ namespace ContabilidadBackend.Infrastructure.Data
             modelBuilder.Entity<Presupuesto>()
                 .HasKey(x => x.Id);
             modelBuilder.Entity<Presupuesto>()
+                .Property(x => x.Id)
+                .ValueGeneratedOnAdd();
+
+            // Nomina
+            modelBuilder.Entity<Nomina>()
+                .HasKey(x => x.Id);
+            modelBuilder.Entity<Nomina>()
+                .Property(x => x.Id)
+                .ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<SolicitudGasto>()
+                .HasKey(x => x.Id);
+            modelBuilder.Entity<SolicitudGasto>()
+                .Property(x => x.Id)
+                .ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<PedidoFabrica>()
+                .HasKey(x => x.Id);
+            modelBuilder.Entity<PedidoFabrica>()
+                .Property(x => x.Id)
+                .ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<CierreVentas>()
+                .HasKey(x => x.Id);
+            modelBuilder.Entity<CierreVentas>()
+                .Property(x => x.Id)
+                .ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<FacturacionMensual>()
+                .HasKey(x => x.Id);
+            modelBuilder.Entity<FacturacionMensual>()
                 .Property(x => x.Id)
                 .ValueGeneratedOnAdd();
         }

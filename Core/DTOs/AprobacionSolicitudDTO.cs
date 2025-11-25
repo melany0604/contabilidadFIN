@@ -8,3 +8,5 @@ namespace ContabilidadBackend.Core.DTOs
         public string Observaciones { get; set; }
     }
 }
+
+

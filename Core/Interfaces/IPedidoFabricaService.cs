@@ -12,3 +12,4 @@ namespace ContabilidadBackend.Core.Interfaces
         Task<decimal> ObtenerTotalFacturasPendientesAsync();
     }
 }
+

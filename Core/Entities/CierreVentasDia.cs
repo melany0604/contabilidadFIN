@@ -14,3 +14,4 @@ namespace ContabilidadBackend.Core.Entities
         public DateTime? HoraCierre { get; set; }
     }
 }
+

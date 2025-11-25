@@ -51,3 +51,4 @@ namespace ContabilidadBackend.Infrastructure.Repositories
         }
     }
 }
+

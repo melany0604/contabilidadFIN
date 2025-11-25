@@ -8,3 +8,4 @@ namespace ContabilidadBackend.Core.DTOs
         public int Anio { get; set; }
     }
 }
+

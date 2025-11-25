@@ -14,3 +14,4 @@ namespace ContabilidadBackend.Core.Entities
         public string Observaciones { get; set; }
     }
 }
+

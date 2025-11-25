@@ -22,6 +22,48 @@ namespace ContabilidadBackend.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("ContabilidadBackend.Core.Entities.CierreVentas", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("Devoluciones")
+                        .HasColumnType("numeric");
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("Fecha")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("HoraCierre")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Sucursal")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<decimal>("VentasEnRuta")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal>("VentasEnTienda")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal>("VentasNetas")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal>("VentasTotal")
+                        .HasColumnType("numeric");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CierresVentas");
+                });
+
             modelBuilder.Entity("ContabilidadBackend.Core.Entities.CuentaPorCobrar", b =>
                 {
                     b.Property<long>("Id")
@@ -100,6 +142,10 @@ namespace ContabilidadBackend.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("Departamento")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("Estado")
                         .IsRequired()
                         .HasColumnType("text");
@@ -122,9 +168,57 @@ namespace ContabilidadBackend.Migrations
                     b.Property<decimal>("Monto")
                         .HasColumnType("numeric");
 
+                    b.Property<string>("TipoEgreso")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
 
                     b.ToTable("Egresos");
+                });
+
+            modelBuilder.Entity("ContabilidadBackend.Core.Entities.FacturacionMensual", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Año")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("FechaGeneracion")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("Mes")
+                        .HasColumnType("integer");
+
+                    b.Property<decimal>("TotalEgresos")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal>("TotalIngresos")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal>("TotalNominas")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal>("TotalSolicitudesAprobadas")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal>("UtilidadBruta")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal>("UtilidadNeta")
+                        .HasColumnType("numeric");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("FacturacionesMensuales");
                 });
 
             modelBuilder.Entity("ContabilidadBackend.Core.Entities.Ingreso", b =>
@@ -165,6 +259,102 @@ namespace ContabilidadBackend.Migrations
                     b.ToTable("Ingresos");
                 });
 
+            modelBuilder.Entity("ContabilidadBackend.Core.Entities.Nomina", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Año")
+                        .HasColumnType("integer");
+
+                    b.Property<decimal>("Bonificacion")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal>("Deducciones")
+                        .HasColumnType("numeric");
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("FechaGeneracion")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime?>("FechaPago")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("IdEmpleado")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Mes")
+                        .HasColumnType("integer");
+
+                    b.Property<decimal>("MontoNeto")
+                        .HasColumnType("numeric");
+
+                    b.Property<string>("NombreEmpleado")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<decimal>("Salario")
+                        .HasColumnType("numeric");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Nominas");
+                });
+
+            modelBuilder.Entity("ContabilidadBackend.Core.Entities.PedidoFabrica", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Cantidad")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("ConceptoProducto")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("FechaPago")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("FechaPedido")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("IdSucursal")
+                        .HasColumnType("integer");
+
+                    b.Property<decimal>("MontoFactura")
+                        .HasColumnType("numeric");
+
+                    b.Property<string>("NombreGerente")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("NombreSucursal")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("NumeroFactura")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PedidosFabrica");
+                });
+
             modelBuilder.Entity("ContabilidadBackend.Core.Entities.Presupuesto", b =>
                 {
                     b.Property<long>("Id")
@@ -196,9 +386,58 @@ namespace ContabilidadBackend.Migrations
                     b.Property<decimal>("MontoTotal")
                         .HasColumnType("numeric");
 
+                    b.Property<decimal>("Saldo")
+                        .HasColumnType("numeric");
+
                     b.HasKey("Id");
 
                     b.ToTable("Presupuestos");
+                });
+
+            modelBuilder.Entity("ContabilidadBackend.Core.Entities.SolicitudGasto", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("AprobadoPor")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Departamento")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("FechaAprobacion")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("FechaSolicitud")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<decimal>("MontoSolicitado")
+                        .HasColumnType("numeric");
+
+                    b.Property<string>("Observaciones")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("TipoSolicitud")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SolicitudesGasto");
                 });
 #pragma warning restore 612, 618
         }

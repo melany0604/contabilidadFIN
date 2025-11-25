@@ -12,3 +12,4 @@ namespace ContabilidadBackend.Core.DTOs
         // ID, Estado y fechas se auto-generan en BD
     }
 }
+

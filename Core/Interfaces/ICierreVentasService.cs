@@ -5,8 +5,9 @@ namespace ContabilidadBackend.Core.Interfaces
 
     public interface ICierreVentasService
     {
-        Task<CierreVentasDia> CerrarVentasDelDiaAsync(CierreVentasDTO cierre);
-        Task<CierreVentasDia> ObtenerCierrePorFechaAsync(DateTime fecha);
-        Task<List<CierreVentasDia>> ObtenerCierresMesAsync(int mes, int año);
+        // Cambiado CierreVentasDia -> CierreVentas
+        Task<CierreVentas> CerrarVentasDelDiaAsync(CierreVentasDTO cierre);
+        Task<CierreVentas> ObtenerCierrePorFechaAsync(DateTime fecha);
+        Task<List<CierreVentas>> ObtenerCierresMesAsync(int mes, int año);
     }
 }

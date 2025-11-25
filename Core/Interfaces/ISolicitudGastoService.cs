@@ -13,3 +13,4 @@ namespace ContabilidadBackend.Core.Interfaces
         Task<List<SolicitudGasto>> ObtenerTodasAsync();
     }
 }
+

@@ -11,6 +11,11 @@ namespace ContabilidadBackend.Core.Entities
         public long IdPresupuesto { get; set; }
         public string Estado { get; set; } = "Pendiente"; // Pendiente, Autorizado, Pagado
         public long? IdAprobacionGerente { get; set; }
+        // Agregamos la propiedad faltante
+        public string Departamento { get; set; }
+
+        // Asumiendo que quizás necesites TipoEgreso en la base de datos también
+        public string TipoEgreso { get; set; }
         public DateTime FechaRegistro { get; set; } = DateTime.UtcNow;
         public DateTime? FechaPago { get; set; }
     }

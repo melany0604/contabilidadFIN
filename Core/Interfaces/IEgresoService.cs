@@ -7,14 +7,16 @@ namespace ContabilidadBackend.Core.Interfaces
 {
     public interface IEgresoService
     {
+        // Coincide con el controlador
         Task<Egreso> CrearEgresoAsync(EgresoDTO dto);
 
-        // --- CORREGIDO: Renombrado de ObtenerEgresosAsync a ObtenerTodosAsync para coincidir con el Controller
+        // Cambiado de ObtenerEgresosAsync a ObtenerTodosAsync para coincidir con el controlador
         Task<List<Egreso>> ObtenerTodosAsync();
 
-        // --- AGREGADO: Faltaba este método que el Controller está usando
-        Task<Egreso?> ObtenerPorIdAsync(long id);
+        // Agregado porque el controlador lo usa
+        Task<Egreso> ObtenerPorIdAsync(long id);
 
+        // Este ya estaba, pero faltaba implementarlo en el servicio
         Task<bool> AutorizarEgresoAsync(long idEgreso, long idGerente);
     }
 }

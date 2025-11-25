@@ -14,3 +14,4 @@ namespace ContabilidadBackend.Core.Entities
         public string Estado { get; set; } = "Registrado"; // Registrado, Verificado
     }
 }
+

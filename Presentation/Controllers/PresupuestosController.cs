@@ -38,5 +38,41 @@ namespace ContabilidadBackend.Presentation.Controllers
             var presupuestos = await _service.ObtenerPresupuestosAsync();
             return Ok(presupuestos);
         }
+
+        [HttpPut("{id}/restar-saldo")]
+        public async Task<IActionResult> RestarSaldo(int id, [FromBody] Dictionary<string, decimal> request)
+        {
+            try
+            {
+                if (request == null || !request.ContainsKey("restar_saldo"))
+                    return BadRequest(new { error = "Falta el parámetro 'restar_saldo'" });
+
+                var monto = request["restar_saldo"];
+                if (monto <= 0)
+                    return BadRequest(new { error = "El monto debe ser mayor a cero" });
+
+                var presupuesto = await _service.RestarSaldoAsync(id, monto);
+                return Ok(new
+                {
+                    mensaje = "Saldo reducido correctamente",
+                    presupuesto = new
+                    {
+                        id = presupuesto.Id,
+                        departamento = presupuesto.Departamento,
+                        saldoAnterior = presupuesto.Saldo + monto,
+                        saldoActual = presupuesto.Saldo,
+                        montoRestado = monto
+                    }
+                });
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new { error = ex.Message });
+            }
+        }
     }
 }

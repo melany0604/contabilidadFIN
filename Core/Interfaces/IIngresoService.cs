@@ -8,7 +8,10 @@ namespace ContabilidadBackend.Core.Interfaces
     public interface IIngresoService
     {
         Task<Ingreso> CrearIngresoAsync(IngresoDTO dto);
-        Task<List<Ingreso>> ObtenerIngresosAsync();
+
+        // RENOMBRADO: De ObtenerIngresosAsync a ObtenerTodosAsync
+        Task<List<Ingreso>> ObtenerTodosAsync();
+
         Task<List<Ingreso>> ObtenerIngresoPorConceptoAsync(string concepto);
     }
 }

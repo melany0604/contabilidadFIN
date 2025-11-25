@@ -40,7 +40,8 @@ namespace ContabilidadBackend.Presentation.Controllers
         [HttpGet]
         public async Task<IActionResult> ObtenerIngresos()
         {
-            var ingresos = await _service.ObtenerIngresosAsync();
+            // CORRECCIÓN AQUÍ: Usar ObtenerTodosAsync en lugar de ObtenerIngresosAsync
+            var ingresos = await _service.ObtenerTodosAsync();
             return Ok(ingresos);
         }
 

@@ -67,13 +67,11 @@
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> ObtenerEgreso(long id) // Cambié int a long para coincidir con la entidad
+        public async Task<IActionResult> ObtenerEgreso(int id)
         {
             try
             {
-                // AHORA SÍ FUNCIONARÁ: Agregamos este método a la interfaz
                 var egreso = await _egresoService.ObtenerPorIdAsync(id);
-
                 if (egreso == null)
                     return NotFound();
 
@@ -104,3 +102,4 @@
         }
     }
 }
+
