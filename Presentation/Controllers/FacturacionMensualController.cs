@@ -1,64 +1,48 @@
-﻿namespace ContabilidadBackend.Presentation.Controllers
-{
-    using Microsoft.AspNetCore.Mvc;
-    using ContabilidadBackend.Core.Interfaces;
+﻿using Microsoft.AspNetCore.Mvc;
+using ContabilidadBackend.Core.Interfaces;
+using System.Threading.Tasks;
 
+namespace ContabilidadBackend.Presentation.Controllers
+{
     [ApiController]
     [Route("api/[controller]")]
     public class FacturacionMensualController : ControllerBase
     {
-        private readonly IFacturacionMensualService _facturacionService;
+        private readonly IFacturacionMensualService _service;
 
-        public FacturacionMensualController(IFacturacionMensualService facturacionService)
+        public FacturacionMensualController(IFacturacionMensualService service)
         {
-            _facturacionService = facturacionService;
+            _service = service;
         }
 
-        [HttpPost("generar/{mes}/{año}")]
-        public async Task<IActionResult> GenerarFacturacionMensual(int mes, int año)
+        // --- CORRECCIÓN: Cambiar 'año' por 'anio' ---
+        [HttpPost("generar/{mes}/{anio}")]
+        public async Task<IActionResult> GenerarFacturacion(int mes, int anio)
         {
             try
             {
-                var resultado = await _facturacionService.GenerarFacturacionMensualAsync(mes, año);
-                return CreatedAtAction(nameof(ObtenerFacturacion), new { mes, año }, resultado);
+                var resultado = await _service.GenerarFacturacionAsync(mes, anio);
+                return Ok(resultado);
             }
-            catch (Exception ex)
+            catch (System.Exception ex)
             {
                 return BadRequest(new { error = ex.Message });
             }
         }
 
-        [HttpGet("{mes}/{año}")]
-        public async Task<IActionResult> ObtenerFacturacion(int mes, int año)
+        // --- CORRECCIÓN: Cambiar 'año' por 'anio' ---
+        [HttpGet("{mes}/{anio}")]
+        public async Task<IActionResult> ObtenerFacturacion(int mes, int anio)
         {
-            try
-            {
-                var facturacion = await _facturacionService.ObtenerFacturacionAsync(mes, año);
-                if (facturacion == null)
-                    return NotFound();
-
-                return Ok(facturacion);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            var resultado = await _service.ObtenerPorMesAnioAsync(mes, anio);
+            if (resultado == null) return NotFound(new { mensaje = "No se ha generado facturación para este mes" });
+            return Ok(resultado);
         }
 
         [HttpGet]
-        public async Task<IActionResult> ObtenerTodasFacturaciones()
+        public async Task<IActionResult> ObtenerTodas()
         {
-            try
-            {
-                var facturaciones = await _facturacionService.ObtenerTodasAsync();
-                return Ok(facturaciones);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            return Ok(await _service.ObtenerTodasAsync());
         }
     }
 }
-
-

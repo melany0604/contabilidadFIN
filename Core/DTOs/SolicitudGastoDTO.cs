@@ -6,7 +6,9 @@ namespace ContabilidadBackend.Core.DTOs
         public string Departamento { get; set; }
         public decimal MontoSolicitado { get; set; }
         public string Descripcion { get; set; }
-        // ID, Estado y fechas se auto-generan en BD
+        public string? AprobadoPor { get; set; }
+        public DateTime? FechaAprobacion { get; set; }
+        public string? Observaciones { get; set; }
     }
 }
 

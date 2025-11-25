@@ -1,82 +1,89 @@
+using ContabilidadBackend.Core.Entities;
+using ContabilidadBackend.Core.Interfaces;
+using ContabilidadBackend.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using ContabilidadBackend.Core.Entities;
+using ContabilidadBackend.Core.Interfaces;
+using ContabilidadBackend.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
 namespace ContabilidadBackend.Application.Services
 {
-    using ContabilidadBackend.Core.Entities;
-    using ContabilidadBackend.Core.Interfaces;
-    using ContabilidadBackend.Infrastructure.Data;
-
     public class FacturacionMensualService : IFacturacionMensualService
     {
         private readonly ContabilidadContext _context;
-        private readonly IIngresoService _ingresoService;
-        private readonly IEgresoService _egresoService;
-        private readonly INominaService _nominaService;
-        private readonly ISolicitudGastoService _solicitudService;
 
-        public FacturacionMensualService(
-            ContabilidadContext context,
-            IIngresoService ingresoService,
-            IEgresoService egresoService,
-            INominaService nominaService,
-            ISolicitudGastoService solicitudService)
+        public FacturacionMensualService(ContabilidadContext context)
         {
             _context = context;
-            _ingresoService = ingresoService;
-            _egresoService = egresoService;
-            _nominaService = nominaService;
-            _solicitudService = solicitudService;
         }
 
-        public async Task<FacturacionMensual> GenerarFacturacionMensualAsync(int mes, int año)
+        public async Task<FacturacionMensual> GenerarFacturacionAsync(int mes, int anio)
         {
-            var ingresos = await _ingresoService.ObtenerTodosAsync();
-            var egresos = await _egresoService.ObtenerTodosAsync();
-            var nominas = await _nominaService.ObtenerNominasDelMesAsync(mes, año);
-            var solicitudes = await _solicitudService.ObtenerSolicitudesAprobadas();
+            // 1. Evitar duplicados: Buscamos si ya existe (Usamos Año con Ñ si tu entidad lo tiene así)
+            var existente = await _context.FacturacionesMensuales
+                .FirstOrDefaultAsync(f => f.Mes == mes && f.Año == anio);
 
-            var totalIngresos = ingresos
-                .Where(i => i.FechaRegistro.Month == mes && i.FechaRegistro.Year == año)
-                .Sum(i => i.Monto);
+            if (existente != null)
+            {
+                _context.FacturacionesMensuales.Remove(existente);
+                await _context.SaveChangesAsync();
+            }
 
-            var totalEgresos = egresos
-                .Where(e => e.FechaRegistro.Month == mes && e.FechaRegistro.Year == año)
-                .Sum(e => e.Monto);
+            // 2. Calcular Totales
 
-            var totalNominas = nominas.Sum(n => n.MontoNeto);
+            // Ingresos
+            var totalIngresos = await _context.Ingresos
+                .Where(x => x.FechaRegistro.Month == mes && x.FechaRegistro.Year == anio)
+                .SumAsync(x => (decimal?)x.Monto) ?? 0;
 
-            var totalSolicitudes = solicitudes
-                .Where(s => s.FechaAprobacion.HasValue && s.FechaAprobacion.Value.Month == mes && s.FechaAprobacion.Value.Year == año)
-                .Sum(s => s.MontoSolicitado);
+            // Egresos
+            var totalEgresos = await _context.Egresos
+                .Where(x => x.FechaRegistro.Month == mes && x.FechaRegistro.Year == anio)
+                .SumAsync(x => (decimal?)x.Monto) ?? 0;
 
-            var facturacion = new FacturacionMensual
+            // Nóminas (CORRECCIÓN AQUÍ: Usamos x.Año si x.Anio daba error)
+            var totalNominas = await _context.Nominas
+                .Where(x => x.Mes == mes && x.Año == anio)
+                .SumAsync(x => (decimal?)x.MontoNeto) ?? 0;
+
+            // 3. Crear Objeto
+            var nuevaFacturacion = new FacturacionMensual
             {
                 Mes = mes,
-                Año = año,
+                Año = anio, // Asignamos al campo Año de la entidad
                 TotalIngresos = totalIngresos,
                 TotalEgresos = totalEgresos,
                 TotalNominas = totalNominas,
-                TotalSolicitudesAprobadas = totalSolicitudes,
+                TotalSolicitudesAprobadas = 0,
                 UtilidadBruta = totalIngresos - totalEgresos,
-                UtilidadNeta = totalIngresos - totalEgresos - totalNominas - totalSolicitudes,
+                UtilidadNeta = (totalIngresos - totalEgresos) - totalNominas,
                 FechaGeneracion = DateTime.UtcNow,
-                Estado = "Cerrado"
+                Estado = "Generado"
             };
 
-            _context.FacturacionesMensuales.Add(facturacion);
+            _context.FacturacionesMensuales.Add(nuevaFacturacion);
             await _context.SaveChangesAsync();
-            return facturacion;
+
+            return nuevaFacturacion;
         }
 
-        public async Task<FacturacionMensual> ObtenerFacturacionAsync(int mes, int año)
+        public async Task<FacturacionMensual> ObtenerPorMesAnioAsync(int mes, int anio)
         {
-            var facturacion = _context.FacturacionesMensuales
-                .FirstOrDefault(f => f.Mes == mes && f.Año == año);
-
-            return await Task.FromResult(facturacion);
+            return await _context.FacturacionesMensuales
+                .FirstOrDefaultAsync(f => f.Mes == mes && f.Año == anio);
         }
 
         public async Task<List<FacturacionMensual>> ObtenerTodasAsync()
         {
-            return await Task.FromResult(_context.FacturacionesMensuales.ToList());
+            return await _context.FacturacionesMensuales.ToListAsync();
         }
     }
 }

@@ -1,11 +1,19 @@
+using ContabilidadBackend.Core.Entities;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
 namespace ContabilidadBackend.Core.Interfaces
 {
-    using ContabilidadBackend.Core.Entities;
-
     public interface IFacturacionMensualService
     {
-        Task<FacturacionMensual> GenerarFacturacionMensualAsync(int mes, int año);
-        Task<FacturacionMensual> ObtenerFacturacionAsync(int mes, int año);
+        // El controlador llama a "GenerarFacturacionAsync"
+        Task<FacturacionMensual> GenerarFacturacionAsync(int mes, int anio);
+
+        // El controlador llama a "ObtenerPorMesAnioAsync"
+        Task<FacturacionMensual> ObtenerPorMesAnioAsync(int mes, int anio);
+
         Task<List<FacturacionMensual>> ObtenerTodasAsync();
     }
 }
+
+

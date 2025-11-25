@@ -45,10 +45,16 @@ namespace ContabilidadBackend.Presentation.Controllers
             return Ok(ingresos);
         }
 
-        [HttpGet("{concepto}")]
+        [HttpGet("buscar/{concepto}")]
         public async Task<IActionResult> ObtenerPorConcepto(string concepto)
         {
             var ingresos = await _service.ObtenerIngresoPorConceptoAsync(concepto);
+
+            if (ingresos == null || ingresos.Count == 0)
+            {
+                return NotFound(new { mensaje = $"No se encontraron ingresos con el concepto: {concepto}" });
+            }
+
             return Ok(ingresos);
         }
     }

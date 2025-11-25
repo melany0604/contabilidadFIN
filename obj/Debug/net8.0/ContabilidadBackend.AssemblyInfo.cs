@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ContabilidadBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed2edc5a347b52c3547bed14977aab3c20a410ff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b4b5e4d8202064021d795fab07c4efc541d3692")]
 [assembly: System.Reflection.AssemblyProductAttribute("ContabilidadBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ContabilidadBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

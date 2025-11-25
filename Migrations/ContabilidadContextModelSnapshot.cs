@@ -403,7 +403,6 @@ namespace ContabilidadBackend.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("AprobadoPor")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Departamento")
@@ -428,7 +427,6 @@ namespace ContabilidadBackend.Migrations
                         .HasColumnType("numeric");
 
                     b.Property<string>("Observaciones")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("TipoSolicitud")

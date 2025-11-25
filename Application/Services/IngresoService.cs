@@ -48,8 +48,10 @@ namespace ContabilidadBackend.Application.Services
 
         public async Task<List<Ingreso>> ObtenerIngresoPorConceptoAsync(string concepto)
         {
+            if (string.IsNullOrEmpty(concepto)) return new List<Ingreso>();
+
             return await _context.Ingresos
-                                 .Where(i => i.Concepto.Contains(concepto))
+                                 .Where(i => i.Concepto.ToLower().Contains(concepto.ToLower()))
                                  .ToListAsync();
         }
 

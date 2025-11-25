@@ -7,11 +7,11 @@ namespace ContabilidadBackend.Core.Entities
         public string Departamento { get; set; } // De qué área solicita
         public decimal MontoSolicitado { get; set; }
         public string Descripcion { get; set; }
-        public string Estado { get; set; } // Pendiente, Aprobada, Rechazada
-        public string AprobadoPor { get; set; }
+        public string Estado { get; set; } = "Pendiente"; // Pendiente, Aprobada, Rechazada
+        public string? AprobadoPor { get; set; }
         public DateTime FechaSolicitud { get; set; } = DateTime.UtcNow;
         public DateTime? FechaAprobacion { get; set; }
-        public string Observaciones { get; set; }
+        public string? Observaciones { get; set; }
     }
 }
 
